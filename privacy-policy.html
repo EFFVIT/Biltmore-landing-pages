@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Biltmore Hair Restoration</title>
+  <meta name="description" content="Privacy Policy for Biltmore Hair Restoration – Dr. Scott F. Alexander, Phoenix, AZ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #333;
+      background: #fff;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; line-height: 1.3; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .site-logo img { width: 220px; }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .phone-link {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      border: 2px solid #000;
+      border-radius: 2px;
+      padding: 10px 18px;
+      color: #000;
+      transition: background 0.2s, color 0.2s;
+    }
+    .phone-link:hover { background: #000; color: #fff; }
+    .btn {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 12px 22px;
+      border: 2px solid #000;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-primary { background: #000; color: #fff; }
+    .btn-primary:hover { background: transparent; color: #000; }
+
+    @media (max-width: 600px) {
+      .site-logo img { width: 160px; }
+      .header-actions .btn { display: none; }
+    }
+
+    /* ===== PAGE HERO ===== */
+    .page-hero {
+      background: #F1F0ED;
+      padding: 48px 0 36px;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-size: clamp(24px, 3.5vw, 36px);
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 8px;
+    }
+    .page-hero .last-updated {
+      font-size: 14px;
+      color: #666;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* ===== POLICY CONTENT ===== */
+    .policy-content {
+      padding: 56px 0 72px;
+    }
+    .policy-content p {
+      margin-bottom: 18px;
+      color: #333;
+    }
+    .policy-content h2 {
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: 600;
+      color: #000;
+      margin: 40px 0 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .policy-content h2:first-child {
+      margin-top: 0;
+      border-top: none;
+    }
+    .policy-content ul {
+      list-style: disc;
+      padding-left: 24px;
+      margin-bottom: 18px;
+    }
+    .policy-content ul li {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .policy-content em {
+      display: block;
+      background: #F1F0ED;
+      border-left: 3px solid #000;
+      padding: 12px 16px;
+      margin-bottom: 18px;
+      font-style: normal;
+      font-size: 15px;
+      color: #555;
+    }
+    .policy-content a { color: #000; text-decoration: underline; }
+    .policy-content a:hover { color: #555; }
+
+    .toc {
+      background: #F1F0ED;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+    .toc p { margin-bottom: 0; font-weight: 600; font-family: 'Poppins', sans-serif; margin-bottom: 10px; }
+    .toc ol {
+      list-style: decimal;
+      padding-left: 20px;
+    }
+    .toc ol li {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .contact-block {
+      background: #F1F0ED;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin-top: 8px;
+    }
+    .contact-block p { margin-bottom: 4px; }
+
+    /* ===== SITE FOOTER ===== */
+    .site-footer {
+      background: #111;
+      padding: 32px 0;
+      text-align: center;
+    }
+    .site-footer p { color: #bbb; font-size: 13px; margin-bottom: 6px; }
+    .site-footer a { color: #ddd; }
+    .site-footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">
+      <a href="https://explore.biltmorehairrestoration.com/">
+        <img src="./assets/logo-4-1.svg" alt="Biltmore Hair Restoration" width="220" height="36">
+      </a>
+    </div>
+    <div class="header-actions">
+      <a href="tel:+19283930454" class="phone-link">(928) 393-0454</a>
+      <a href="https://explore.biltmorehairrestoration.com/#form" class="btn btn-primary">Book Your Consultation</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<div class="page-hero">
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: March 2026</p>
+  </div>
+</div>
+
+<!-- ===== POLICY CONTENT ===== -->
+<main class="policy-content">
+  <div class="container">
+
+    <p>Thank you for choosing to be part of our community at Dr. Scott Alexander &#8211; Hair Restoration ("company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at <a href="mailto:staff@drscottalexander.com">staff@drscottalexander.com</a>.</p>
+
+    <p>When you visit our website https://explore.biltmorehairrestoration.com and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy notice, we describe our privacy policy. We seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy policy that you do not agree with, please discontinue use of our websites and our services.</p>
+
+    <p>This privacy policy applies to all information collected through our website (such as https://explore.biltmorehairrestoration.com) and/or any related services, sales, marketing or events (we refer to them collectively in this privacy policy as the &#8220;Websites&#8221;).</p>
+
+    <h2>TABLE OF CONTENTS</h2>
+    <div class="toc">
+      <ol>
+        <li>WHAT INFORMATION DO WE COLLECT?</li>
+        <li>HOW DO WE USE YOUR INFORMATION?</li>
+        <li>WILL YOUR INFORMATION BE SHARED WITH ANYONE?</li>
+        <li>DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</li>
+        <li>HOW LONG DO WE KEEP YOUR INFORMATION?</li>
+        <li>HOW DO WE KEEP YOUR INFORMATION SAFE?</li>
+        <li>DO WE COLLECT INFORMATION FROM MINORS?</li>
+        <li>WHAT ARE YOUR PRIVACY RIGHTS?</li>
+        <li>DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</li>
+        <li>DO WE MAKE UPDATES TO THIS POLICY?</li>
+        <li>HOW CAN YOU CONTACT US ABOUT THIS POLICY?</li>
+      </ol>
+    </div>
+
+    <h2>1. WHAT INFORMATION DO WE COLLECT?</h2>
+
+    <h2>Personal information you disclose to us</h2>
+
+    <em><strong>In Short:</strong> We collect personal information that you provide to us such as name, address, contact information, passwords and security data, and payment information.</em>
+
+    <p>We collect personal information that you voluntarily provide to us when expressing an interest in obtaining information about us or our products and services, when participating in activities on the Websites or otherwise contacting us.</p>
+
+    <p>The personal information that we collect depends on the context of your interactions with the Websites, the choices you make and us and the products and features you use. The personal information we collect can include the following:</p>
+
+    <p><strong>Name and Contact Data.</strong> We may collect your first and last name, email address, postal address, phone number, and other similar contact data.</p>
+
+    <p><strong>Credentials.</strong> When needed, we collect passwords, password hints, and similar security information used for authentication and account access.</p>
+
+    <p><strong>Payment Data.</strong> We collect data necessary to process your payment if you make purchases, such as your payment instrument number (such as a credit card number), and the security code associated with your payment instrument. All payment data is stored by the payment processor and you should review its privacy policies and contact the payment processor directly to respond to your questions.</p>
+
+    <p>All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information.</p>
+
+    <h2>Information collected from other sources</h2>
+
+    <em><strong>In Short:</strong> We may collect limited data from public databases, marketing partners, and other outside sources.</em>
+
+    <p>We may obtain information about you from other sources, such as public databases, joint marketing partners, as well as from other third parties. Examples of the information we receive from other sources include: social media profile information; marketing leads and search results and links, including paid listings (such as sponsored links).</p>
+
+    <h2>2. HOW DO WE USE YOUR INFORMATION?</h2>
+
+    <em><strong>In Short:</strong> We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.</em>
+
+    <p>We use personal information collected via our Websites for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests (&#8220;Business Purposes&#8221;), in order to enter into or perform a contract with you (&#8220;Contractual&#8221;), with your consent (&#8220;Consent&#8221;), and/or for compliance with our legal obligations (&#8220;Legal Reasons&#8221;). We indicate the specific processing grounds we rely on next to each purpose listed below.</p>
+
+    <p>We use the information we collect or receive:</p>
+
+    <ul>
+      <li><strong>Fulfill and manage your orders</strong> for Contractual reasons. We may use your information to fulfill and manage your orders, payments, returns, and exchanges made through the Websites.</li>
+      <li><strong>For other Business Purposes.</strong> We may use your information for other Business Purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Websites, products, services, marketing and your experience.</li>
+    </ul>
+
+    <h2>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</h2>
+
+    <em><strong>In Short:</strong> We only share information with your consent, to comply with laws, to protect your rights, or to fulfill business obligations.</em>
+
+    <p>We only share and disclose your information in the following situations:</p>
+
+    <ul>
+      <li><strong>Compliance with Laws.</strong> We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).</li>
+      <li><strong>Vital Interests and Legal Rights.</strong> We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.</li>
+      <li><strong>Vendors, Consultants and Other Third-Party Service Providers.</strong> We may share your data with third party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include: payment processing, data analysis, email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties to use tracking technology on the Websites, which will enable them to collect data about how you interact with the Websites over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.</li>
+      <li><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+      <li><strong>With your Consent.</strong> We may disclose your personal information for any other purpose with your consent.</li>
+    </ul>
+
+    <h2>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h2>
+
+    <em><strong>In Short:</strong> We may use cookies and other tracking technologies to collect and store your information.</em>
+
+    <p>We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our <a href="./cookie-policy.html">Cookie Policy</a>.</p>
+
+    <h2>5. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
+
+    <em><strong>In Short:</strong> We keep your information for as long as necessary to fulfill the purposes outlined in this privacy policy unless otherwise required by law.</em>
+
+    <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy policy, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements).</p>
+
+    <p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
+
+    <h2>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
+
+    <em><strong>In Short:</strong> We aim to protect your personal information through a system of organizational and technical security measures.</em>
+
+    <p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the Internet itself is 100 percent secure. Although we will do our best to protect your personal information, transmission of personal information to and from our Websites is at your own risk. You should only access the services within a secure environment.</p>
+
+    <h2>7. DO WE COLLECT INFORMATION FROM MINORS?</h2>
+
+    <em><strong>In Short:</strong> We do not knowingly collect data from or market to children under 18 years of age.</em>
+
+    <p>We do not knowingly solicit data from or market to children under 18 years of age. By using the Websites, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent's use of the Websites. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we have collected from children under age 18, please contact us at <a href="mailto:staff@drscottalexander.com">staff@drscottalexander.com</a>.</p>
+
+    <h2>8. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
+
+    <em><strong>In Short:</strong> You may review, change, or terminate your account at any time.</em>
+
+    <p>If you are resident in the European Economic Area, and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You also have the right to request access to your data, correction of your data and for your data to be removed. In the event of a data breach, you will be notified within 72 hours of the time the data breach is detected. You can find the European Economic Area contact details here: <a href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm</a></p>
+
+    <p>Cookies and similar technologies: Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Websites. To opt-out of interest-based advertising by advertisers on our Websites visit <a href="http://www.aboutads.info/choices/">http://www.aboutads.info/choices/</a>. For more details, see our <a href="./cookie-policy.html">Cookie Policy</a>.</p>
+
+    <h2>9. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2>
+
+    <em><strong>In Short:</strong> Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.</em>
+
+    <p>California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.</p>
+
+    <p>If you are under 18 years of age, reside in California, and have a registered account with the Websites, you have the right to request removal of unwanted data that you publicly post on the Websites. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Websites, but please be aware that the data may not be completely or comprehensively removed from our systems.</p>
+
+    <h2>10. DO WE MAKE UPDATES TO THIS POLICY?</h2>
+
+    <em><strong>In Short:</strong> Yes, we will update this policy as necessary to stay compliant with relevant laws.</em>
+
+    <p>We may update this privacy policy from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy policy frequently to be informed of how we are protecting your information.</p>
+
+    <h2>11. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</h2>
+
+    <p>If you have questions or comments about this policy or any further questions or comments about us or our policies, you may email us at <a href="mailto:staff@drscottalexander.com">staff@drscottalexander.com</a> or by post to:</p>
+
+    <div class="contact-block">
+      <p><strong>Dr. Scott Alexander &#8211; Hair Restoration</strong></p>
+      <p>2222 E. Highland Ave. Ste 314</p>
+      <p>Phoenix, AZ 85016</p>
+      <p><a href="tel:+19289393650">(928) 393-4650</a></p>
+    </div>
+
+    <h2>PERSONAL DATA MANAGEMENT</h2>
+
+    <p>According to the Privacy Policy, you agree to share your personal data with our service. However, you still have the right to update, transfer or delete it from us at any time. If you need further management for your data, please contact us at <a href="mailto:staff@drscottalexander.com">staff@drscottalexander.com</a>.</p>
+
+  </div>
+</main>
+
+<!-- ===== SITE FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <img src="./assets/logo-4-1.svg" alt="Biltmore Hair Restoration" width="180" style="margin:0 auto 16px;filter:invert(1) brightness(0.6);">
+    <p>2222 E. Highland Ave, Ste 314, Phoenix, AZ 85016 &nbsp;|&nbsp; <a href="tel:+19283930454">(928) 393-0454</a></p>
+    <p style="margin-top:8px;">&copy; 2026 Biltmore Hair Restoration. All rights reserved. &nbsp;|&nbsp; <a href="./privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="./cookie-policy.html">Cookie Policy</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
