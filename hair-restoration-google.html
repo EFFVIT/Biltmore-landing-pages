@@ -258,19 +258,19 @@
       gap: 28px;
     }
     .trust-item {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 40px 1fr;
       gap: 16px;
-      align-items: flex-start;
+      align-items: start;
     }
     .trust-item .check-icon {
-      flex-shrink: 0;
       width: 36px;
       height: 36px;
+      display: block;
       margin-top: 2px;
     }
     .trust-item-text {
-      flex: 1;
+      min-width: 0;
     }
     .trust-item-text h3 { font-size: 25px; margin-bottom: 6px; }
     .trust-item-text p { font-size: 18px; color: #333; line-height: 1.5; }
