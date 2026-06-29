@@ -372,10 +372,28 @@
     .capabilities-header p { color: #555; font-size: 18px; }
     .capabilities-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr;
       gap: 48px;
     }
+    .cap-column {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      grid-template-rows: auto 1fr;
+      column-gap: 40px;
+      align-items: start;
+    }
+    .cap-col-icon {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 4px;
+    }
+    .cap-col-icon svg { height: auto; max-height: 120px; width: 100%; opacity: 0.85; }
     .cap-column h3 {
+      grid-column: 2;
+      grid-row: 1;
       color: #000;
       font-family: 'Lato', sans-serif;
       font-size: 25px;
@@ -383,6 +401,10 @@
       margin-bottom: 24px;
       padding-bottom: 12px;
       border-bottom: 2px solid #ddd;
+    }
+    .cap-list {
+      grid-column: 2;
+      grid-row: 2;
     }
     .cap-list li {
       display: flex;
@@ -395,14 +417,19 @@
     }
     .cap-list li .icon { flex-shrink: 0; margin-top: 2px; }
     .cap-list li .icon svg { width: 17px; height: 17px; }
-    .cap-col-icon {
-      display: none;
-      margin-bottom: 24px;
-    }
-    .cap-col-icon svg { height: auto; max-height: 100px; opacity: 0.85; }
-    @media (min-width: 769px) { .cap-col-icon { display: block; } }
     @media (max-width: 768px) {
-      .capabilities-grid { grid-template-columns: 1fr; }
+      .cap-column {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+      }
+      .cap-col-icon {
+        grid-column: 1;
+        grid-row: 1;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+      }
+      .cap-column h3 { grid-column: 1; grid-row: 2; }
+      .cap-list { grid-column: 1; grid-row: 3; }
     }
 
     /* ===== FAQ ===== */
