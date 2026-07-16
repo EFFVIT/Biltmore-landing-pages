@@ -598,7 +598,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2>Request Your Hair Consultation</h2>
         <iframe
             src="https://api.leadconnectorhq.com/widget/form/ebibqwAFUUhyEgdgVfTn"
-            style="width:100%;height:100%;border:none;border-radius:0px"
+            style="width:100%;height:620px;border:none;border-radius:0px;display:block"
             id="inline-ebibqwAFUUhyEgdgVfTn"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
@@ -1038,7 +1038,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3>Request Your Consultation</h3>
         <iframe
             src="https://api.leadconnectorhq.com/widget/form/X9Qn2q5BukyNOuk4xKZY"
-            style="width:100%;height:100%;border:none;border-radius:0px"
+            style="width:100%;height:620px;border:none;border-radius:0px;display:block"
             id="inline-X9Qn2q5BukyNOuk4xKZY"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
@@ -1100,5 +1100,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69b3ecc3d379667abc75de48"></script>
+
+<!-- GHL form fix: URL param passthrough (gclid/gbraid/wbraid/UTMs) + iframe-resizer
+     parent handshake so the form renders at real content height instead of the
+     150px iframe default. Ported from EFFVIT/rhrli-landing-pages (a37afd3, c81605d). -->
+<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.9/js/iframeResizer.min.js"></script>
+<script>
+(function () {
+  var KEYS = ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+  var url = new URLSearchParams(window.location.search);
+  var out = new URLSearchParams();
+  KEYS.forEach(function (k) {
+    var v = url.get(k) || sessionStorage.getItem(k);
+    if (v) { try { sessionStorage.setItem(k, v); } catch (e) {} out.set(k, v); }
+  });
+  var frames = document.querySelectorAll('iframe[src*="api.leadconnectorhq.com/widget/form"]');
+  frames.forEach(function (f) {
+    if (out.toString()) {
+      f.src = f.src + (f.src.indexOf('?') === -1 ? '?' : '&') + out.toString();
+    }
+  });
+  function initResize(attempt) {
+    if (window.iFrameResize) {
+      frames.forEach(function (f) { window.iFrameResize({ checkOrigin: false, log: false }, '#' + f.id); });
+    } else if (attempt < 25) {
+      setTimeout(function () { initResize(attempt + 1); }, 200);
+    }
+  }
+  initResize(0);
+})();
+</script>
 </body>
 </html>
