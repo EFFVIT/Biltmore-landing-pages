@@ -1114,6 +1114,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var v = url.get(k) || sessionStorage.getItem(k);
     if (v) { try { sessionStorage.setItem(k, v); } catch (e) {} out.set(k, v); }
   });
+  // The form's gclid custom field key is "gclid-of", so GHL's hidden-field
+  // prefill never matches the standard ?gclid= param - alias it.
+  var g = out.get('gclid');
+  if (g) { out.set('gclid-of', g); out.set('gclidof', g); }
   var frames = document.querySelectorAll('iframe[src*="api.leadconnectorhq.com/widget/form"]');
   frames.forEach(function (f) {
     if (out.toString()) {
