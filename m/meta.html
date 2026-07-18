@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XRBRBQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta - Biltmore Hair Restoration</title>
+  <meta name="description" content="A private, personalized consultation to evaluate your hair loss, treatment options, and expected results, guided by experienced medical professionals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #000;
+      background: #fff;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; line-height: 1.2; }
+    h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 600; }
+    h2 { font-size: clamp(22px, 3vw, 38px); font-weight: 600; }
+    h3 { font-size: clamp(18px, 2vw, 25px); font-weight: 600; }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 14px 28px;
+      border: 2px solid #000;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-primary {
+      background: #000;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: transparent;
+      color: #000;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #000;
+      border-color: #000;
+    }
+    .btn-outline:hover {
+      background: #000;
+      color: #fff;
+    }
+    .btn-white {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+    .btn-white:hover {
+      background: transparent;
+      color: #fff;
+      border-color: #fff;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .site-logo img { width: 220px; }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .phone-link {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      border: 2px solid #000;
+      border-radius: 2px;
+      padding: 10px 20px;
+      color: #000;
+      transition: background 0.2s, color 0.2s;
+    }
+    .phone-link:hover { background: #000; color: #fff; }
+    @media (max-width: 640px) {
+      .phone-link { display: none; }
+      .site-logo img { width: 160px; }
+    }
+
+    /* ===== HERO ===== */
+    .hero-section {
+      background: #F1F0ED;
+      padding: 70px 0;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 48px;
+      align-items: start;
+    }
+    .hero-content { padding-top: 12px; }
+    .hero-content h1 { color: #000; margin-bottom: 20px; }
+    .hero-content h2 {
+      font-size: clamp(18px, 2.2vw, 26px);
+      font-weight: 400;
+      color: #333;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+    .hero-content p { color: #555; margin-bottom: 24px; }
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 24px;
+      padding: 16px;
+      background: #fff;
+      border-left: 4px solid #000;
+    }
+    .hero-trust img { width: 120px; flex-shrink: 0; }
+    .hero-trust-text { font-size: 14px; color: #555; }
+    .hero-trust-text strong { display: block; color: #000; font-size: 15px; margin-bottom: 4px; }
+
+    .form-card {
+      background: #fff;
+      padding: 28px;
+      box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.32);
+      border-radius: 4px;
+    }
+    .form-card h2 {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .form-iframe {
+      width: 100%;
+      border: none;
+      min-height: 460px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+      .form-card { max-width: 600px; margin: 0 auto; }
+    }
+
+    /* ===== BANNER IMAGE ===== */
+    .banner-section {
+      background: url('../assets/banner-1.jpg') center/cover no-repeat;
+    }
+    .banner-image {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    /* ===== STEPS SECTION ===== */
+    .steps-section {
+      background: #fff;
+      color: #000;
+      padding: 70px 0;
+    }
+    .steps-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 48px;
+    }
+    .steps-header h2 { color: #000; margin-bottom: 12px; }
+    .steps-header p { color: #555; font-size: 18px; }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+    .step-item { text-align: center; }
+    .step-icon {
+      width: 100px;
+      height: 100px;
+      background: #F1F0ED;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-icon svg { width: 60px; height: auto; }
+    .hero-placeholder-img {
+      display: none;
+      margin-top: 24px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .hero-placeholder-img img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    @media (min-width: 901px) { .hero-placeholder-img { display: block; } }
+    .step-item h3 { color: #000; font-size: 20px; margin-bottom: 8px; }
+    .step-item p { color: #555; font-size: 16px; }
+    .steps-cta {
+      text-align: center;
+      padding: 40px 0 0;
+      border-top: 1px solid #ddd;
+    }
+    .steps-cta p { color: #000; font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+    .steps-cta .sub { color: #555; font-size: 16px; margin-bottom: 24px; font-weight: 400; }
+    .steps-cta .tagline { color: #555; font-size: 14px; margin-top: 12px; }
+    @media (max-width: 768px) {
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .steps-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== WHY TRUST US ===== */
+    .trust-section {
+      padding: 80px 0;
+      background: #F1F0ED;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 48px;
+    }
+    .section-header h2 { margin-bottom: 12px; }
+    .section-header p { color: #555; font-size: 18px; }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+    .trust-item {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .trust-item .check-icon {
+      width: 36px;
+      height: 36px;
+      display: block;
+      margin-top: 2px;
+    }
+    .trust-item-text {
+      min-width: 0;
+    }
+    .trust-item-text h3 { font-size: 25px; margin-bottom: 6px; }
+    .trust-item-text p { font-size: 18px; color: #333; line-height: 1.5; }
+    .trust-cta {
+      text-align: center;
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .trust-cta p { color: #555; font-size: 14px; }
+    @media (max-width: 768px) {
+      .trust-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .trust-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== DOCTOR SECTION ===== */
+    .doctor-section {
+      background: #fff;
+      padding: 70px 0;
+    }
+    .doctor-inner {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .doctor-photo img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .doctor-info h2 { margin-bottom: 6px; }
+    .doctor-intro { color: #555; font-size: 15px; margin-bottom: 16px; font-style: italic; }
+    .doctor-bio p { margin-bottom: 14px; color: #333; line-height: 1.75; font-size: 15px; }
+    .doctor-bio p:last-child { margin-bottom: 0; }
+    .doctor-cta { margin-top: 28px; }
+    @media (max-width: 768px) {
+      .doctor-inner { grid-template-columns: 1fr; }
+      .doctor-photo { max-width: 320px; margin: 0 auto; }
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-section {
+      background: #fff;
+      padding: 70px 0;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .testimonial-card {
+      background: #F1F0ED;
+      padding: 28px;
+      border-radius: 4px;
+      border-top: 3px solid #000;
+    }
+    .review-source img { height: 28px; margin-bottom: 12px; }
+    .stars {
+      color: #000;
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    .review-text { font-size: 15px; color: #333; line-height: 1.7; margin-bottom: 12px; }
+    .review-more {
+      display: none;
+    }
+    .read-more-toggle {
+      background: none;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 0;
+      color: #000;
+    }
+    .review-author { margin-top: 16px; font-weight: 600; font-size: 14px; color: #555; }
+    @media (max-width: 768px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== CAPABILITIES ===== */
+    .capabilities-section {
+      background: #fff;
+      color: #000;
+      padding: 70px 0;
+    }
+    .capabilities-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 48px;
+    }
+    .capabilities-header h2 { color: #000; margin-bottom: 12px; }
+    .capabilities-header p { color: #555; font-size: 18px; }
+    .capabilities-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+    .cap-column {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      grid-template-rows: auto 1fr;
+      column-gap: 40px;
+      align-items: start;
+    }
+    .cap-col-icon {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 4px;
+    }
+    .cap-col-icon svg { height: auto; max-height: 120px; width: 100%; opacity: 0.85; }
+    .cap-column h3 {
+      grid-column: 2;
+      grid-row: 1;
+      color: #000;
+      font-family: 'Lato', sans-serif;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #ddd;
+    }
+    .cap-list {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .cap-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      font-size: 18px;
+      color: #333;
+      line-height: 1.5;
+    }
+    .cap-list li .icon { flex-shrink: 0; margin-top: 2px; }
+    .cap-list li .icon svg { width: 17px; height: 17px; }
+    @media (max-width: 768px) {
+      .cap-column {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+      }
+      .cap-col-icon {
+        grid-column: 1;
+        grid-row: 1;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+      }
+      .cap-column h3 { grid-column: 1; grid-row: 2; }
+      .cap-list { grid-column: 1; grid-row: 3; }
+    }
+
+    /* ===== FAQ ===== */
+    .faq-section {
+      padding: 70px 0;
+      background: #fff;
+    }
+    .faq-section h2 { text-align: center; margin-bottom: 40px; }
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .faq-item:first-child { border-top: 1px solid #e0e0e0; }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 20px 0;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 300;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      display: none;
+      padding: 0 0 20px;
+      color: #444;
+      line-height: 1.75;
+      font-size: 15px;
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ===== FOOTER FORM SECTION ===== */
+    .footer-form-section {
+      background: #F1F0ED;
+      padding: 70px 0;
+    }
+    .footer-form-inner {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 56px;
+      align-items: start;
+    }
+    .footer-form-content h2 { color: #000; margin-bottom: 16px; }
+    .footer-form-content p { color: #333; margin-bottom: 24px; line-height: 1.75; }
+    .contact-details { margin-top: 32px; }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #333;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .contact-item svg { flex-shrink: 0; }
+    .contact-item a { color: #000; font-weight: 500; }
+    .footer-form-card {
+      background: #fff;
+      padding: 28px;
+      border-radius: 4px;
+      box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.32);
+    }
+    .footer-form-card h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    @media (max-width: 900px) {
+      .footer-form-inner { grid-template-columns: 1fr; }
+    }
+
+    /* ===== SITE FOOTER ===== */
+    .site-footer {
+      background: #111;
+      padding: 32px 0;
+      text-align: center;
+    }
+    .site-footer p { color: #bbb; font-size: 13px; margin-bottom: 6px; }
+    .site-footer a { color: #ddd; }
+    .site-footer a:hover { color: #fff; }
+
+    /* ===== UTILITIES ===== */
+    .text-center { text-align: center; }
+    .mt-4 { margin-top: 16px; }
+    .mt-6 { margin-top: 24px; }
+    .mt-8 { margin-top: 32px; }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-up { animation: fadeInUp 0.5s ease both; }
+
+    /* ===== DIVIDER ===== */
+    .divider { border: none; border-top: 1px solid #e0e0e0; margin: 0; }
+  </style>
+
+  <style>
+    /* ===== META-PAGE SUPPLEMENTAL ===== */
+    .lead-narrow { max-width: 760px; margin: 0 auto; }
+    .section-lite { padding: 70px 0; }
+    .bg-beige { background: #F1F0ED; }
+    .bg-white { background: #fff; }
+    .center { text-align: center; }
+    .mb-6 { margin-bottom: 24px; }
+
+    /* Before/After gallery */
+    .ba-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 8px;
+    }
+    .ba-gallery figure { background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.10); }
+    .ba-gallery img { width: 100%; height: auto; display: block; }
+    .ba-caption { text-align: center; font-size: 13px; color: #777; padding: 10px 8px; }
+    @media (max-width: 768px) { .ba-gallery { grid-template-columns: 1fr; max-width: 460px; margin: 8px auto 0; } }
+
+    /* Icon feature grid (4-up) */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: #fff;
+      border-top: 3px solid #000;
+      border-radius: 4px;
+      padding: 28px 22px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    .feature-card h3 { font-size: 19px; margin-bottom: 8px; }
+    .feature-card p { font-size: 15px; color: #555; }
+    @media (max-width: 900px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .feature-grid { grid-template-columns: 1fr; } }
+
+    /* Split (text + image) */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .split img { width: 100%; border-radius: 4px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .split .split-body p { color: #333; margin-bottom: 16px; line-height: 1.75; }
+    @media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
+
+    /* Numbered steps */
+    .num-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+    .num-step { text-align: center; }
+    .num-badge {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #000; color: #fff; font-family: 'Poppins', sans-serif;
+      font-size: 24px; font-weight: 600; display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .num-step h3 { font-size: 19px; margin-bottom: 6px; }
+    .num-step p { font-size: 15px; color: #555; }
+    @media (max-width: 768px) { .num-steps { grid-template-columns: 1fr; } }
+
+    /* Candidate two-column card */
+    .candidate-card { background:#fff; border-radius:4px; box-shadow:0 8px 24px rgba(0,0,0,0.10); padding:24px; margin-top:24px; }
+    .candidate-cols { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .candidate-cols h3 { font-size:18px; margin-bottom:10px; }
+    .candidate-cols ul li { display:flex; gap:10px; align-items:flex-start; font-size:15px; color:#333; margin-bottom:8px; }
+    .candidate-cols .good li::before { content:"✓"; color:#1a7f37; font-weight:700; }
+    .candidate-cols .bad li::before { content:"✕"; color:#b42318; font-weight:700; }
+    .candidate-note { margin-top:16px; text-align:center; font-size:14px; color:#555; }
+    @media (max-width:600px){ .candidate-cols { grid-template-columns:1fr; } }
+
+    /* Check list */
+    .check-list li { display:flex; gap:12px; align-items:flex-start; font-size:17px; color:#333; margin-bottom:14px; line-height:1.5; }
+    .check-list li::before { content:"✓"; color:#000; font-weight:700; flex-shrink:0; }
+    .arrow-list li { display:flex; gap:10px; align-items:flex-start; font-size:17px; color:#333; margin-bottom:12px; }
+    .arrow-list li::before { content:"›"; color:#000; font-weight:700; flex-shrink:0; }
+
+    /* Testimonials strip */
+    .quote-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; margin-top:40px; }
+    .quote-card { background:#F1F0ED; border-top:3px solid #000; border-radius:4px; padding:26px; }
+    .quote-card .stars { color:#000; font-size:18px; letter-spacing:2px; margin-bottom:12px; }
+    .quote-card p { font-size:15px; color:#333; line-height:1.7; }
+    .quote-card .who { margin-top:14px; font-weight:600; font-size:14px; color:#555; }
+    @media (max-width:768px){ .quote-grid { grid-template-columns:1fr; } }
+
+    /* Contact card */
+    .contact-card { background:#fff; border-left:4px solid #000; padding:24px; border-radius:4px; max-width:520px; }
+    .contact-card .contact-item { display:flex; align-items:center; gap:12px; margin-bottom:12px; color:#333; font-size:16px; }
+    .contact-card .contact-item:last-child { margin-bottom:0; }
+
+    /* CTA band */
+    .cta-band { background:#000; color:#fff; padding:64px 0; text-align:center; }
+    .cta-band h2 { color:#fff; margin-bottom:20px; }
+    .cta-band p { color:#ddd; margin-bottom:8px; }
+    .form-shell { background:#fff; padding:28px; border-radius:4px; box-shadow:10px 10px 20px 0 rgba(0,0,0,0.32); max-width:560px; margin:24px auto 0; }
+    .form-shell h3 { font-size:20px; margin-bottom:16px; text-align:center; }
+  </style>
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Meta - Biltmore Hair Restoration">
+  <meta property="og:description" content="See if hair restoration is right for you, before you commit to surgery. A private, personalized medical consultation.">
+  <meta property="og:image" content="https://more.biltmorehairrestoration.com/assets/og-m-meta.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://more.biltmorehairrestoration.com/assets/og-m-meta.webp">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XRBRBQ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="site-logo">
+      <a href="#hero"><img src="../assets/logo-4-1.svg" alt="Biltmore Hair Restoration" width="220" height="36"></a>
+    </div>
+    <div class="header-actions">
+      <a href="tel:+19283934166" class="phone-link">(928) 393-4166</a>
+      <a href="#form-section" class="btn btn-primary">Book a Consult</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero-section" id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content fade-in-up">
+        <h1>See If Hair Restoration Is Right For You&mdash;Before You Commit to Surgery</h1>
+        <h2>A private, personalized consultation to evaluate your hair loss, treatment options, and expected results&mdash;guided by experienced medical professionals.</h2>
+        <p>Every treatment plan is customized&mdash;no templates, no shortcuts.</p>
+        <a href="#form-section" class="btn btn-primary">Am I A Good Candidate?</a>
+      </div>
+      <div class="form-card" id="form-section">
+        <h2>Request Your Consultation</h2>
+        <iframe
+            src="https://api.leadconnectorhq.com/widget/form/0353IMUBoXwiitPUbRE7"
+            style="width:100%;height:620px;border:none;border-radius:0px;display:block"
+            id="inline-0353IMUBoXwiitPUbRE7"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Meta - Hero Form"
+            data-height="452"
+            data-layout-iframe-id="inline-0353IMUBoXwiitPUbRE7"
+            data-form-id="0353IMUBoXwiitPUbRE7"
+            title="Meta - Hero Form">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BEFORE / AFTER GALLERY ===== -->
+<section class="section-lite bg-white">
+  <div class="container">
+    <div class="ba-gallery">
+      <figure><img src="../assets/m-ba-lg1.webp" alt="Hair restoration before and after result" loading="lazy"></figure>
+      <figure><img src="../assets/m-ba-lg2.webp" alt="Hair restoration before and after result" loading="lazy"></figure>
+      <figure><img src="../assets/m-ba-lg3.webp" alt="Hair restoration before and after result" loading="lazy"></figure>
+    </div>
+    <p class="ba-caption">Individual results may vary. Photos are for illustrative purposes.</p>
+  </div>
+</section>
+
+<!-- ===== NOT A SALES APPOINTMENT ===== -->
+<section class="section-lite bg-beige">
+  <div class="container">
+    <div class="section-header">
+      <h2>This Is Not a Sales Appointment</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card"><h3>Medical Eligibility</h3><p>Determine whether you're medically eligible.</p></div>
+      <div class="feature-card"><h3>Review Options</h3><p>Review surgical and non-surgical options.</p></div>
+      <div class="feature-card"><h3>Realistic Outcomes</h3><p>Understand realistic outcomes and timelines.</p></div>
+      <div class="feature-card"><h3>Safety &amp; Planning</h3><p>Discuss recovery, safety, and long-term planning.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PERMANENT / MISTAKES ===== -->
+<section class="section-lite bg-white">
+  <div class="container">
+    <div class="split">
+      <div class="split-body">
+        <h2>Hair Restoration Is Permanent&mdash;Mistakes Are Too</h2>
+        <p>Hair restoration isn't cosmetic filler. It's a permanent medical procedure that requires careful planning and skilled execution.</p>
+        <p>This consultation exists to help you avoid rushed decisions, over-harvesting, and unnatural results&mdash;and to determine whether treatment makes sense for you at all.</p>
+        <a href="#form-section" class="btn btn-primary">Am I A Good Candidate?</a>
+      </div>
+      <div><img src="../assets/m-container-1.webp" alt="Consultation and planning" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section-lite bg-beige">
+  <div class="container">
+    <div class="section-header">
+      <h2>How It Works</h2>
+    </div>
+    <div class="num-steps">
+      <div class="num-step"><div class="num-badge">1</div><h3>Request a Consultation</h3><p>Submit a short, private form.</p></div>
+      <div class="num-step"><div class="num-badge">2</div><h3>Speak With a Patient Advisor</h3><p>Review your goals and next steps.</p></div>
+      <div class="num-step"><div class="num-badge">3</div><h3>In-Clinic Evaluation</h3><p>Confirm candidacy and personalized options.</p></div>
+    </div>
+    <div class="steps-cta">
+      <a href="#form-section" class="btn btn-primary">Check My Eligibility</a>
+      <p class="tagline">No obligation. Private and confidential.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LIMITED INCENTIVE / CONTACT ===== -->
+<section class="section-lite bg-white">
+  <div class="container">
+    <div class="section-header">
+      <h2>Limited Consultation Incentive Available</h2>
+    </div>
+    <div class="center">
+      <div class="contact-card" style="margin:0 auto;">
+        <div class="contact-item">
+          <svg width="18" height="18" fill="#333" viewBox="0 0 512 512"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>
+          <a href="tel:+19283934166">(928) 393-4166</a>
+        </div>
+        <div class="contact-item">
+          <svg width="18" height="18" fill="#333" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+          <a href="mailto:staff@drscottalexander.com">staff@drscottalexander.com</a>
+        </div>
+        <div class="contact-item">
+          <svg width="18" height="18" fill="#333" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+          <span>2222 E. Highland Ave. Ste 314, Phoenix, AZ 85016</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA + BOTTOM FORM ===== -->
+<section class="cta-band" id="footer-form">
+  <div class="container">
+    <h2>If You're Going to Do This, Do It Informed</h2>
+    <div class="form-shell">
+      <h3>Request Your Consultation</h3>
+      <iframe
+          src="https://api.leadconnectorhq.com/widget/form/I2tJN3KryikpCQmyTaxs"
+          style="width:100%;height:620px;border:none;border-radius:0px;display:block"
+          id="inline-I2tJN3KryikpCQmyTaxs"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Meta - Footer Form"
+          data-height="443"
+          data-layout-iframe-id="inline-I2tJN3KryikpCQmyTaxs"
+          data-form-id="I2tJN3KryikpCQmyTaxs"
+          title="Meta - Footer Form">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SITE FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <img src="../assets/logo-4-1.svg" alt="Biltmore Hair Restoration" width="180" style="margin:0 auto 16px;filter:invert(1) brightness(0.6);">
+    <p>2222 E. Highland Ave. Ste 314, Phoenix, AZ 85016 &nbsp;|&nbsp; <a href="tel:+19283934166">(928) 393-4166</a></p>
+    <p style="margin-top:8px;"><a href="/c/privacy-policy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/c/cookie-policy">Cookie Policy</a> &nbsp;|&nbsp; <a href="/c/terms-of-service">Terms of Service</a></p>
+    <p style="margin-top:8px;font-size:12px;color:#999;">
+      This website provides general information about hair restoration procedures. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Individual results may vary. Not all candidates are eligible for treatment. A medical consultation is required to determine candidacy.
+    </p>
+  </div>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  function toggleFAQ(btn) {
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(el) { el.classList.remove('open'); });
+    if (!isOpen) { item.classList.add('open'); }
+  }
+</script>
+
+<!-- GHL form fix: URL param passthrough (gclid/fbclid/gbraid/wbraid/UTMs) + iframe-resizer
+     parent handshake so the form renders at real content height instead of the
+     150px iframe default. Ported from EFFVIT/rhrli-landing-pages (a37afd3, c81605d). -->
+<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.9/js/iframeResizer.min.js"></script>
+<script>
+(function () {
+  var KEYS = ['gclid', 'fbclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+  var url = new URLSearchParams(window.location.search);
+  var out = new URLSearchParams();
+  KEYS.forEach(function (k) {
+    var v = url.get(k) || sessionStorage.getItem(k);
+    if (v) { try { sessionStorage.setItem(k, v); } catch (e) {} out.set(k, v); }
+  });
+  // The form's gclid custom field key is "gclid-of", so GHL's hidden-field
+  // prefill never matches the standard ?gclid= param - alias it.
+  var g = out.get('gclid');
+  if (g) { out.set('gclid-of', g); out.set('gclidof', g); }
+  // Same alias treatment for fbclid (Meta paid-social click id).
+  var fb = out.get('fbclid');
+  if (fb) { out.set('fbclid-of', fb); out.set('fbclidof', fb); }
+  var frames = document.querySelectorAll('iframe[src*="api.leadconnectorhq.com/widget/form"]');
+  frames.forEach(function (f) {
+    if (out.toString()) {
+      f.src = f.src + (f.src.indexOf('?') === -1 ? '?' : '&') + out.toString();
+    }
+  });
+  function initResize(attempt) {
+    if (window.iFrameResize) {
+      frames.forEach(function (f) { window.iFrameResize({ checkOrigin: false, log: false }, '#' + f.id); });
+    } else if (attempt < 25) {
+      setTimeout(function () { initResize(attempt + 1); }, 200);
+    }
+  }
+  initResize(0);
+})();
+</script>
+<script src="/fab-widget.js" data-client="biltmore"></script>
+</body>
+</html>
