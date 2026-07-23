@@ -861,10 +861,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 </script>
 
-<!-- GHL form fix: URL param passthrough (gclid/fbclid/gbraid/wbraid/UTMs) + iframe-resizer
-     parent handshake so the form renders at real content height instead of the
-     150px iframe default. Ported from the EFFVIT LP fleet reference implementation. -->
-<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.9/js/iframeResizer.min.js"></script>
+<!-- GHL form fix: URL param passthrough (gclid/fbclid/gbraid/wbraid/UTMs) into the form
+     iframe, then GHL's own form_embed.js, which both completes the iframe-resizer
+     handshake (real content height instead of the 150px default) and posts the
+     parent page URL + referrer to the widget so attribution is not "Direct". -->
 <script>
 (function () {
   var KEYS = ['gclid', 'fbclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
@@ -887,14 +887,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       f.src = f.src + (f.src.indexOf('?') === -1 ? '?' : '&') + out.toString();
     }
   });
-  function initResize(attempt) {
-    if (window.iFrameResize) {
-      frames.forEach(function (f) { window.iFrameResize({ checkOrigin: false, log: false }, '#' + f.id); });
-    } else if (attempt < 25) {
-      setTimeout(function () { initResize(attempt + 1); }, 200);
-    }
-  }
-  initResize(0);
+
+  // GHL form_embed.js posts the parent page's full URL + referrer into the
+  // widget (its "query-params" postMessage). Without it the widget only has the
+  // iframe's cross-origin Referer, which the browser trims to the bare origin
+  // under the default strict-origin-when-cross-origin policy - so every lead
+  // landed with attributionSource.sessionSource "Direct traffic" and null
+  // gclid/utm even on paid clicks.
+  //
+  // Two ordering rules, both learned the hard way:
+  //   1. It must load AFTER the src swap above. form_embed.js merges whatever
+  //      is already on iframe.src into its payload, and mutating src after it
+  //      initialises reloads the iframe and blanks the widget.
+  //   2. Nothing else may call iFrameResize on these frames. form_embed.js
+  //      bundles its own iframe-resizer and re-parents each iframe into an
+  //      "<id>-div" wrapper; a second standalone iframe-resizer then throws
+  //      "iFrame (<id>) does not exist", and that uncaught error aborts
+  //      form_embed's init and leaves the wrapper empty - the form disappears.
+  //      That is the crash the old removal note described. form_embed.js owns
+  //      resizing now, so the standalone iframe-resizer script is gone.
+  var femb = document.createElement('script');
+  femb.src = 'https://link.msgsndr.com/js/form_embed.js';
+  femb.async = true;
+  document.body.appendChild(femb);
 })();
 </script>
 <script src="/fab-widget.js" data-client="biltmore"></script>
