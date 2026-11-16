@@ -921,11 +921,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    594px form: two fields, no consent, no submit button. Measures clean in every
    local test because a local test never drops the script. Expand any iframe
    still sitting at its initial height; a normally-resized form is untouched. */
-(function(){var H=980;function fix(){
+(function(){var H=760;function fix(){
   var l=document.querySelectorAll('iframe[data-form-id]');
   for(var i=0;i<l.length;i++){var f=l[i],init=Number(f.getAttribute('data-height')||0),
     now=Math.round(f.getBoundingClientRect().height);
-    if(init&&Math.abs(now-init)<=2&&now<H){f.style.height=H+'px';}}}
+    if(now<H){f.style.height=H+'px';}}}
  setTimeout(fix,6000);window.addEventListener('load',function(){setTimeout(fix,4000);});})();
 </script>
 </body>
