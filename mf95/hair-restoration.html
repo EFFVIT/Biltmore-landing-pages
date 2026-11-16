@@ -1159,11 +1159,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    594px form: two fields, no consent, no submit button. Measures clean in every
    local test because a local test never drops the script. Expand any iframe
    still sitting at its initial height; a normally-resized form is untouched. */
-(function(){var H=760;function fix(){
+(function(){var H=760;var sent=false;
+ function report(f,init,reason){if(sent)return;sent=true;try{
+   var b=JSON.stringify({path:location.pathname,formId:f.getAttribute('data-form-id'),
+     initialH:init,rescuedTo:H,viewportW:window.innerWidth,isMobile:window.innerWidth<768,reason:reason});
+   var u='https://control.effvit.com/api/lp-telemetry/form-rescue';
+   if(navigator.sendBeacon){navigator.sendBeacon(u,new Blob([b],{type:'application/json'}));}
+   else{fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:b,keepalive:true}).catch(function(){});}
+ }catch(e){}}
+ function fix(){
   var l=document.querySelectorAll('iframe[data-form-id]');
   for(var i=0;i<l.length;i++){var f=l[i],init=Number(f.getAttribute('data-height')||0),
     now=Math.round(f.getBoundingClientRect().height);
-    if(now<H){f.style.height=H+'px';}}}
+    if(now<H){f.style.height=H+'px';report(f,init,'no-resize');}}}
  setTimeout(fix,6000);window.addEventListener('load',function(){setTimeout(fix,4000);});})();
 </script>
 </body>
