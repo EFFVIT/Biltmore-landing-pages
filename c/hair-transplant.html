@@ -1164,7 +1164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    var b=JSON.stringify({path:location.pathname,formId:f.getAttribute('data-form-id'),
      initialH:init,rescuedTo:H,viewportW:window.innerWidth,isMobile:window.innerWidth<768,reason:reason});
    var u='https://control.effvit.com/api/lp-telemetry/form-rescue';
-   if(navigator.sendBeacon){navigator.sendBeacon(u,new Blob([b],{type:'application/json'}));}
+   if(navigator.sendBeacon){navigator.sendBeacon(u,new Blob([b],{type:'text/plain;charset=UTF-8'}));}
    else{fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:b,keepalive:true}).catch(function(){});}
  }catch(e){}}
  function fix(){
